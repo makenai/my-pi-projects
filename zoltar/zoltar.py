@@ -187,14 +187,9 @@ class zoltar :
 		clock = pygame.time.Clock()
 		while True:
 			#if (pygame.time.get_ticks() >= 30000):
-				#sys.exit()
-			
+				#sys.exit()			
 			self.poll_input()
 			self.draw_screen()
-			
-#			self.screen.fill((0,0,0))
-#			self.screen.blit(logo, (0, 0))
-#			pygame.display.update()
-       
+
 # Create an instance of the zoltar class
 zoltar().run()
