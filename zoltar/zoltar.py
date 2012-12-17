@@ -183,7 +183,6 @@ class zoltar :
 
     def run(self):
 		"Test method to make sure the display is configured correctly"
-		#logo = pygame.image.load('richcat.png').convert()
 		clock = pygame.time.Clock()
 		while True:
 			#if (pygame.time.get_ticks() >= 30000):
