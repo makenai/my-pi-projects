@@ -152,11 +152,11 @@ class zoltar :
 			self.current_image = pygame.image.load( self.current_question["image"] ).convert()
 		time.sleep(0.5)
 
-    def answer_question(self,direction):
-    	if ( self.current_game != None ):
-	        self.current_game.store_answer( self.current_question[ direction ] )
-	        blip_sound.play()
-	        self.next_question()
+	def answer_question(self,direction):
+		if ( self.current_game != None ):
+			self.current_game.store_answer( self.current_question[ direction ] )
+			blip_sound.play()
+			self.next_question()
 
     def poll_input(self):
         "we're gonna make the buttons worky"
