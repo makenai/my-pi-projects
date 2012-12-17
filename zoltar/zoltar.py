@@ -45,9 +45,6 @@ JOY_RIGHT = 24
 BUTTON = 23
 
 header = Image.open('assets/receiptheader.jpg')
-def print_header():
-	"print receipt header"
-	#
 
 class zoltar :
     screen = None
