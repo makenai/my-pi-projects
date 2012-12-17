@@ -103,12 +103,12 @@ class zoltar :
         "Destructor to make sure pygame shuts down, etc."
 
     def draw_screen(self):
-    	self.screen.fill((0,0,0))
-    	if (self.current_game == None):
-    		self.screen.blit(self.logo, (0, 0))
-    	else:
-    		self.screen.blit(self.current_image, (0, 0))
-    	pygame.display.update()
+		self.screen.fill((0,0,0))
+		if (self.current_game == None):
+			self.screen.blit(self.logo, (0, 0))
+		else:
+			self.screen.blit(self.current_image, (0, 0))
+		pygame.display.update()
    
     def start_game(self):
 		"Try to start the game if not already running"
