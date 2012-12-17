@@ -48,14 +48,14 @@ def print_header():
 	# printer.print_bitmap(list(header.getdata()), 384, 324, True)
 
 class zoltar :
-    screen = None
-    current_game = None
-    current_question = None
-    current_image = None
-    logo = None
-    wait_screen = None
-    header_thread = None
-    
+	screen = None
+	current_game = None
+	current_question = None
+	current_image = None
+	logo = None
+	wait_screen = None
+	header_thread = None
+
     def __init__(self):
         "Ininitializes a new pygame screen using the framebuffer"
         # Based on "Python GUI in Linux frame buffer"
@@ -91,7 +91,7 @@ class zoltar :
         self.screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
         # Clear the screen to start
         self.screen.fill((0, 0, 0))        
-
+        
 		# Render the screen
         pygame.display.update()
         
