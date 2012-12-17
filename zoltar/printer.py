@@ -289,15 +289,15 @@ class ThermalPrinter(object):
                     # it's white
                     else:
                         if output_png: draw.point((counter % 384, round(counter / 384)), fill=(255, 255, 255))
-				self.printer.write(chr(byt))   
+				self.printer.write(chr(byt))
                 #print_bytes.append(byt)
         
         # output the array all at once to the printer
         # might be better to send while printing when dealing with 
         # very large arrays...
-#        print "Printing bytes"
-#        for b in print_bytes:
-#            self.printer.write(chr(b))   
+        # print "Printing bytes"
+        # for b in print_bytes:
+        #     self.printer.write(chr(b))   
         
         if output_png:
             test_print = open('print-output.png', 'wb')
