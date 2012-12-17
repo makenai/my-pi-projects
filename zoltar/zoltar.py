@@ -127,7 +127,7 @@ class zoltar :
 			pygame.display.update()
 			self.header_thread.join()
 			print self.current_game.answers
-			printer.print_bitmap(list(header.getdata()), 384, 324)
+			printer.print_bitmap(list(self.header.getdata()), 384, 324)
 			outfit = self.grabber.get_recommendations(self.current_game.answers)
 			printer.linefeed()
 			for item in outfit:
