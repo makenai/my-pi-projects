@@ -166,8 +166,8 @@ class zoltar :
         if (GPIO.input(JOY_UP) == False and GPIO.input(BUTTON) == False):
         	sys.exit()        
         if (GPIO.input(JOY_UP) == False):
-        	self.start_game()
         	print "UP"
+        	self.start_game()
         if (GPIO.input(JOY_LEFT) == False):
         	print "LEFT"
         	if ( self.start_game() == False ):
