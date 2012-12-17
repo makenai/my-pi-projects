@@ -110,6 +110,7 @@ class zoltar :
    
     def start_game(self):
 		"Try to start the game if not already running"
+		print "Got Here"
 		if ( self.current_game == None ):
 			self.current_game = game_session()
 			self.next_question()
