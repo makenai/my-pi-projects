@@ -44,8 +44,6 @@ JOY_LEFT = 22
 JOY_RIGHT = 24
 BUTTON = 23
 
-header = Image.open('assets/receiptheader.jpg')
-
 class zoltar :
     screen = None
     current_game = None
@@ -54,6 +52,7 @@ class zoltar :
     logo = None
     wait_screen = None
     header_thread = None
+    header = Image.open('assets/receiptheader.jpg')
     
     def __init__(self):
         "Ininitializes a new pygame screen using the framebuffer"
