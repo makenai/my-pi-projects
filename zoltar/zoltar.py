@@ -27,6 +27,8 @@ CORE_VALUES = [
 pygame.mixer.init(48000, -16, 1, 15000)
 meow_sound = pygame.mixer.Sound("assets/cutemeow.wav")
 blip_sound = pygame.mixer.Sound("assets/blip.wav")
+welcome_sound = pygame.mixer.Sound("assets/welcome.wav")
+printing_sound = pygame.mixer.Sound("assets/printing.wav")
 printer = ThermalPrinter()
 
 GPIO.setmode(GPIO.BCM)
