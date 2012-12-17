@@ -47,7 +47,7 @@ BUTTON = 23
 header = Image.open('assets/receiptheader.jpg')
 def print_header():
 	"print receipt header"
-	#printer.print_bitmap(list(header.getdata()), 384, 324)
+	#
 
 class zoltar :
     screen = None
@@ -117,8 +117,8 @@ class zoltar :
 		if ( self.current_game == None ):
 			self.current_game = game_session()
 			self.next_question()
-			self.header_thread = Process(target=print_header)
-			self.header_thread.start()
+#			self.header_thread = Process(target=print_header)
+#			self.header_thread.start()
 			welcome_sound.play()
 			return True
 		return False
@@ -131,6 +131,7 @@ class zoltar :
 			pygame.display.update()
 			self.header_thread.join()
 			print self.current_game.answers
+			printer.print_bitmap(list(header.getdata()), 384, 324)
 			outfit = self.grabber.get_recommendations(self.current_game.answers)
 			printer.linefeed()
 			for item in outfit:
