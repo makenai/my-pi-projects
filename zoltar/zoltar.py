@@ -57,7 +57,6 @@ class zoltar :
 	header_thread = None
 
     def __init__(self):
-        
 		# Render the screen
         pygame.display.update()
         
