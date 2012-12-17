@@ -119,6 +119,7 @@ class zoltar :
 			self.next_question()
 			self.header_thread = Process(target=print_header)
 			self.header_thread.start()
+			welcome_sound.play()
 			return True
 		return False
 
