@@ -119,6 +119,8 @@ class zoltar :
 			self.next_question()
 			self.header_thread = Process(target=print_header)
 			self.header_thread.start()
+			return True
+		return False
 
     def next_question(self):
 		self.current_question = self.current_game.next_question()
