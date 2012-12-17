@@ -127,6 +127,7 @@ class zoltar :
 		self.current_question = self.current_game.next_question()
 		if ( self.current_question == None ):
 			self.screen.blit(self.wait_screen, (0, 0))
+			printing_sound.play()
 			pygame.display.update()
 			self.header_thread.join()
 			print self.current_game.answers
