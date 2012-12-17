@@ -34,8 +34,7 @@ class ThermalPrinter(object):
 
     '''
 
-#    BAUDRATE = 19200
-    BAUDRATE = 38400
+    BAUDRATE = 19200
     TIMEOUT = 3
     SERIALPORT = '/dev/ttyAMA0'
     # pixels with more color value (average for multiple channels) are counted as white
