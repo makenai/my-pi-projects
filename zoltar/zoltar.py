@@ -58,7 +58,7 @@ class zoltar :
 
 	def __init__(self):
 		# Render the screen
-        pygame.display.update()
+		pygame.display.update()
         
         self.wait_screen = pygame.image.load('assets/gypsycat.png').convert()
         self.logo = pygame.image.load('assets/logo.png').convert()
