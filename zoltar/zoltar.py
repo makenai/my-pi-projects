@@ -56,7 +56,7 @@ class zoltar :
 	wait_screen = None
 	header_thread = None
 
-    def __init__(self):
+	def __init__(self):
 		# Render the screen
         pygame.display.update()
         
