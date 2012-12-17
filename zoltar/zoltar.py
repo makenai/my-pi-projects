@@ -64,7 +64,7 @@ class zoltar :
         self.logo = pygame.image.load('assets/logo.png').convert()
         self.grabber = recommendation_grabber()
 
-    def __del__(self):
+	def __del__(self):
 		"Destructor to make sure pygame shuts down, etc."
 
     def draw_screen(self):
