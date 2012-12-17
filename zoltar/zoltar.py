@@ -169,20 +169,20 @@ class zoltar :
         	self.start_game()
         	print "UP"
         if (GPIO.input(JOY_LEFT) == False):
-        	self.start_game()
         	print "LEFT"
-        	self.answer_question("left")
+        	if ( self.start_game() == False ):
+        		self.answer_question("left")
         if (GPIO.input(BUTTON) == False):
+        	print "BUTTON"
         	if ( self.start_game() == False ):
         		meow_sound.play()
-        	print "BUTTON"
         if (GPIO.input(JOY_RIGHT) == False):
-        	self.start_game()
         	print "RIGHT"
-        	self.answer_question("right")
+        	if ( self.start_game() == False ):
+        		self.answer_question("right")
         if (GPIO.input(JOY_DOWN) == False):
-        	self.start_game()
         	print "DOWN"
+        	self.start_game()
 
     def run(self):
 		"Test method to make sure the display is configured correctly"
