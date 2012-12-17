@@ -149,6 +149,7 @@ class zoltar :
 			printer.linefeed()
 			printer.linefeed()
 			printer.linefeed()
+			printer.linefeed()
 			self.current_game = None
 		else:
 			self.current_image = pygame.image.load( self.current_question["image"] ).convert()
