@@ -65,7 +65,7 @@ class zoltar :
         self.grabber = recommendation_grabber()
 
     def __del__(self):
-        "Destructor to make sure pygame shuts down, etc."
+		"Destructor to make sure pygame shuts down, etc."
 
     def draw_screen(self):
 		self.screen.fill((0,0,0))
