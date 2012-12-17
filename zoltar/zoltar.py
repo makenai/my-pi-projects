@@ -79,7 +79,7 @@ class zoltar :
                 continue
             found = True
             break
-    
+            
         if not found:
             raise Exception('No suitable video driver found!')
         
@@ -90,7 +90,7 @@ class zoltar :
         print "Framebuffer size: %d x %d" % (size[0], size[1])
         self.screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
         # Clear the screen to start
-        self.screen.fill((0, 0, 0))        
+        self.screen.fill((0, 0, 0))
         
 		# Render the screen
         pygame.display.update()
