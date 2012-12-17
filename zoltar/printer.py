@@ -295,6 +295,7 @@ class ThermalPrinter(object):
         # output the array all at once to the printer
         # might be better to send while printing when dealing with 
         # very large arrays...
+        print "Printing bytes"
         for b in print_bytes:
             self.printer.write(chr(b))   
         
