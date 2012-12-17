@@ -172,9 +172,9 @@ class zoltar :
         	print "LEFT"
         	self.answer_question("left")
         if (GPIO.input(BUTTON) == False):
-        	self.start_game()
+        	if ( self.start_game() == False ):
+        		meow_sound.play()
         	print "BUTTON"
-        	meow_sound.play()
         if (GPIO.input(JOY_RIGHT) == False):
         	self.start_game()
         	print "RIGHT"
