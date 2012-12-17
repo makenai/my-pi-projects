@@ -51,7 +51,6 @@ class zoltar :
     current_image = None
     logo = None
     wait_screen = None
-    header_thread = None
     header = Image.open('assets/receiptheader.jpg')
     
     def __init__(self):
@@ -126,7 +125,6 @@ class zoltar :
 			self.screen.blit(self.wait_screen, (0, 0))
 			printing_sound.play()
 			pygame.display.update()
-			self.header_thread.join()
 			print self.current_game.answers
 			printer.print_bitmap(list(self.header.getdata()), 384, 324)
 			outfit = self.grabber.get_recommendations(self.current_game.answers)
