@@ -266,11 +266,12 @@ class ThermalPrinter(object):
             draw = ImageDraw.Draw(test_img)
 
         self.linefeed()
-        
+        print "Converting pixel array"
         black_and_white_pixels = self.convert_pixel_array_to_binary(pixels, w, h)        
         print_bytes = []
 
         # read the bytes into an array
+        print "Reading bytes into array"
         for rowStart in xrange(0, h, 256):
             chunkHeight = 255 if (h - rowStart) > 255 else h - rowStart
             print_bytes += (18, 42, chunkHeight, 48)
