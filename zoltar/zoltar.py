@@ -145,7 +145,7 @@ class zoltar :
 				i = Image.open(image_filename)
 				data = list(i.getdata())
 				w, h = i.size
-				printer.print_bitmap(data, w, h, True)
+				printer.print_bitmap(data, w, h)
 				printer.linefeed()
 			printer.print_text("Your core value of the day is:")
 			printer.linefeed()
