@@ -160,6 +160,8 @@ class zoltar :
 
     def poll_input(self):
         "we're gonna make the buttons worky"
+        if (GPIO.input(JOY_UP) == False and GPIO.input(BUTTON) == False):
+        	sys.exit()        
         if (GPIO.input(JOY_UP) == False):
         	self.start_game()
         	print "UP"
@@ -178,8 +180,6 @@ class zoltar :
         if (GPIO.input(JOY_DOWN) == False):
         	self.start_game()
         	print "DOWN"
-        if (GPIO.input(JOY_UP) == False and GPIO.input(BUTTON) == False):
-        	sys.exit()
 
     def run(self):
 		"Test method to make sure the display is configured correctly"
