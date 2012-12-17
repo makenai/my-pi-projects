@@ -44,8 +44,8 @@ BUTTON = 23
 
 header = Image.open('assets/receiptheader.jpg')
 def print_header():
-	# print receipt header
-	printer.print_bitmap(list(header.getdata()), 384, 324, True)
+	"print receipt header"
+	#printer.print_bitmap(list(header.getdata()), 384, 324, True)
 
 class zoltar :
     screen = None
